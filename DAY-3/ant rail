@@ -1,0 +1,9 @@
+n=int(input())
+l=list(map(int,input().split()))
+ip=0
+ans=0
+for i in l:
+    ip=ip+i
+    if ip==0:
+        ans=ans+1
+print(ans)
