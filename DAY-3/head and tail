@@ -1,0 +1,18 @@
+str=input()
+h_c=0
+t_c=0
+score=0
+for i in str:
+    if i=="H" or i=="h":
+    
+        h_c+=1
+        score+=2
+        if h_c==3:
+            break
+    else:
+        
+            t_c+=1
+            score-=1
+            if t_c==3:
+                break
+print(score)
