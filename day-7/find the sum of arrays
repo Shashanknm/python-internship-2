@@ -1,0 +1,20 @@
+n=int(input())
+a=list(map(int,input().split()))
+ts=0
+ls=0
+rs=0
+cs=0
+ans=[]
+for i in a:
+    ts+=i
+
+for i in a:
+    ls+=i
+    rs=ts-ls
+    cs=abs(rs-ls)
+    ans.append(cs)
+print(ans)
+#output
+# 5
+# 1 2 3 4 5
+# [13, 9, 3, 5, 15]
