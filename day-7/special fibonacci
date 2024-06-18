@@ -1,0 +1,9 @@
+def sfibo(n):
+    if n==0:
+        return 1
+    if n==1:
+        return 1
+    return (sfibo(n-1)**2+(n-2)**2)%47
+print(sfibo(6))
+#output
+# 34
