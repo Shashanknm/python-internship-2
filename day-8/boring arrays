@@ -1,0 +1,16 @@
+n=int(input())
+a=list(map(int,input().split()))
+a.sort()
+ls=0
+rs=len(a)-1
+s=0
+while ls<=rs:
+    d=abs(a[rs]-a[ls])
+    s+=d
+    ls+=1
+    rs-=1
+print(s)
+#output
+# 4
+# 1 2 3 4
+# 4
